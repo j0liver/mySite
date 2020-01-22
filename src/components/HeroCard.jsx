@@ -1,13 +1,18 @@
 import React from 'react' 
 
+import { FaRobot } from 'react-icons/fa'
 const HeroCard = () => {
 
     return(
-        <section>
+        <section className='HeroCard'>
             <div>
-                <img src="" alt=""/>
+                <FaRobot />
             </div>
-            <p>Hello Im a FullStack Developer</p>
+            <div className='HeroCardText'>
+                <p>Hello Im a FullStack Developer</p>
+                <button>More Info</button>
+            </div>
         </section>
     )
 }
+export default HeroCard
