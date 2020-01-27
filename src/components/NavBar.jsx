@@ -12,6 +12,7 @@ const NavBar = () => {
           
           //Animate Links
           navLinks.forEach((link, index)=>{
+            
             if(link.style.animation){
               link.style.animation = ''
             }else{
@@ -25,6 +26,9 @@ const NavBar = () => {
           
           
         };
+
+
+     
   
   
     return (
@@ -42,21 +46,21 @@ const NavBar = () => {
                 </ul>
             </section> */}
 
-            <nav class="navbar">
-            <div class="logo">
+            <nav className="navbar">
+            <div className="logo">
                 <h4>The nav</h4>
             </div>
-            <ul class="nav-links navbar-nav">
+            <ul className="nav-links navbar-nav">
                 <li><Link to='/'>Home</Link></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><Link to='/about'>About</Link></li>
+                <li><Link to='/projects'>Projects</Link></li>
+                <li><Link to='/contact'>Contact</Link></li>
             </ul>
-            <div class="burger navbar-toggle" onClick={() => (
+            <div className="burger navbar-toggle" onClick={() => (
                 navSlide())}>
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+                <div className="line1"></div>
+                <div className="line2"></div>
+                <div className="line3"></div>
             </div>
             </nav>
         </header>

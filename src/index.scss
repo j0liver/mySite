@@ -59,8 +59,11 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: #5d4954;
+  
   font-family: 'Poppins', sans-serif;
+  z-index:  100;
+  opacity: 70%;
+  position: relative;
 }
 
 .logo{
@@ -103,6 +106,10 @@ nav{
 }
 
 @media screen and (max-width:1024px){
+  nav{
+    opacity: .9;
+    z-index: 200;
+  }
   .nav-links{
     width:60%;
   }
@@ -117,7 +124,7 @@ nav{
     right:0px;
     height:92vh;
     top: 8vh;
-    background-color:#5d4954;
+    background-color: black;
     display:flex;
     flex-direction: column;  
     align-items: center;
@@ -162,50 +169,28 @@ nav{
 }
 
 
-///Hero Typing Component /////////////////////////////////////
+///BackGround /////////////////////////////////////
+.app{
+  z-index: 1;
+}
 
-.container p {
-	font-size: 3rem;
-	padding: 0.5rem;
-	font-weight: bold;
-	letter-spacing: 0.1rem;
-	text-align: center;
-	overflow: hidden;
-  }
-  .container p span.typed-text {
-	font-weight: normal;
-	color: #dd7732;
-  }
-  .container p span.cursor {
-	display: inline-block;
-	background-color: #ccc;
-	margin-left: 0.1rem;
-	width: 3px;
-	animation: blink 1s infinite;
-  }
-  .container p span.cursor.typing {
-	animation: none;
-  }
-  @keyframes blink {
-	0%  { background-color: #ccc; }
-	49% { background-color: #ccc; }
-	50% { background-color: transparent; }
-	99% { background-color: transparent; }
-	100%  { background-color: #ccc; }
-  }
 
   ////HeroCard////////////////////////////////////////
 
+  
+  
   .HeroCard{
-    background-image: url('./imgs/raised-building-frame-169647.jpg');
-    width: 100%;
-    height: 100vh;
+    position: relative;
+    z-index: 100;
+    width: 60%;
+    height: 75vh;
     background-size: cover;
     font-size: 3.5rem;
     color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 0 auto;
     
       .HeroCardText{
         font-size: 1.5rem;
@@ -223,6 +208,7 @@ nav{
   }
 
 
+
   /////Footer/////////////////////////////
 
   footer{
@@ -231,35 +217,36 @@ nav{
     align-items: center;
     justify-content: flex-end;
     font-size: 1.0rem;
-    width: 100%;
-    background-color: #5d4954;
+    width: 80%;
+    color: white;
+    opacity: 90%;
+    margin: 0 auto;
 
 
     .SocialLinks{
       display: flex;
       justify-content: space-evenly;
-      width: 50%;
+      width: 35%;
       padding: 15px 0;
       
       .FooterCircles{
         font-size: 1.5rem;
         border-radius: 90%;
-        background-color:black;
+        
         width: 8%;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 3px 1px;
-        &:hover{
-          background-color: white;
-        }
+        
         a{
-          color:white;
-          &:hover{
-            color: purple;
-          }
+          color: white;
+          opacity: .9;
         }
       }
+    }
+    section{
+      color: white;
     }
   }
 
@@ -267,6 +254,24 @@ nav{
   // about///////////////////////////////
 
 
+.about{
+  color: white;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .imgSection{
+    color: white;
+    display: flex;
+    max-width: 40%;
+    flex-direction: column;
+    
+  }
 
+  .skillsSection{
+    min-width: 40%
+  }
+}
 
   

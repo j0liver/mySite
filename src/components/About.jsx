@@ -1,21 +1,36 @@
 import React from 'react'
+import { FaRobot } from 'react-icons/fa'
+
 
 const About = () => {
 
     return (
-        <section>
-            <section>
+        <section className='about'>
+            <section className='imgSection'>
                 <div>
-                    <img src="" alt=""/>
+                    <FaRobot />
                 </div>
                 <p>FullStack JavaScript Devolper with a passion for learning new Tech</p>
             </section>
-            <section>
+            <section className='skillsSection'>
                 <h2>Skills</h2>
                 <div>
-
+                    <FaRobot/>
+                    <FaRobot/>
+                    <FaRobot/>
+                    <FaRobot/>
+                    <FaRobot/>
+                    <FaRobot/>
+                    <FaRobot/>
+                    <FaRobot/>
+                    <FaRobot/>
+                    <FaRobot/>
+                    <FaRobot/>
+                    <FaRobot/>
                 </div>
             </section>
         </section>
     )
 }
+
+export default About
