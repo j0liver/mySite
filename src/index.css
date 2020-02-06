@@ -211,4 +211,44 @@ footer {
   .about .skillsSection {
     min-width: 40%; }
 
+.projects {
+  width: 90%;
+  height: 75vh;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  color: white;
+  align-items: center; }
+
+.contact {
+  width: 90%;
+  height: 75vh;
+  display: flex;
+  color: white;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .contact div {
+    opacity: 1;
+    background-color: black;
+    border: 1px solid white;
+    width: 30%; }
+    .contact div form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; }
+      .contact div form label {
+        font-size: 16px; }
+      .contact div form div {
+        margin: 10px auto;
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
+        opacity: 1; }
+      .contact div form button {
+        margin: 10px auto;
+        width: 50%; }
+
 /*# sourceMappingURL=index.css.map */

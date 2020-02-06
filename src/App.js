@@ -9,6 +9,8 @@ import Footer from './components/Footer'
 import About from './components/About'
 import ParticlesBackground from './components/ParticlesBackground'
 import ContactForm  from './components/Contact'
+import Project from './components/Projects'
+
 function App() {
   return (
     <div className="App">
@@ -17,7 +19,7 @@ function App() {
       
       <Route exact path='/' component={HeroCard}/>
       <Route path='/about' component={About}/>
-      {/* <Route path='/Projects' component={}/> */}
+      <Route path='/Projects' component={Project}/>
       <Route path='/Contact' component={ContactForm}/>
       <ParticlesBackground/>
       <Footer />

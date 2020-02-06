@@ -1,11 +1,13 @@
 import React from 'react' 
 
 import { FaRobot } from 'react-icons/fa'
-import ParticlesBackground from './ParticlesBackground'
+
+import anime from 'animejs'
 const HeroCard = () => {
 
+    
     return(
-    // <ParticlesBackground  className='background'>
+    
         <section className='HeroCard'>
             
             <div>

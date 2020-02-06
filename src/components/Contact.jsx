@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
-const Contact = ({ touched,
-    errors,
-    isSubmitting,
-    values }) => {
+const Contact = ({ values, touched, errors, status }) => {
     const [contact, setContact] = useState({
         name: '',
         email: '',
@@ -15,7 +12,8 @@ const Contact = ({ touched,
         setContact({ ...contact, [e.target.name]: e.target.value });
     }
     return(
-        <section>
+        <section className='contact'>
+            <div>
             <h2>Contact Me</h2>
             <Form onSubmit="">
                 <div>
@@ -27,6 +25,8 @@ const Contact = ({ touched,
                         value={values.name}
                         // onChange={handleChange}
                     />
+                    {touched.name && errors.name && (
+                <p className="error">{errors.name}</p>)}
                 </div>
                 <div>
                     <label>Email</label>
@@ -36,6 +36,8 @@ const Contact = ({ touched,
                         value={values.email}
                         // onChange={handleChange}
                     />
+                    {touched.email && errors.email && (
+                <p className="error">{errors.email}</p>)}
                 </div>
                 <div>
                     <label>Message</label>
@@ -45,9 +47,13 @@ const Contact = ({ touched,
                         value={values.message}
                         // onChange={handleChange}
                     />
+                    {touched.message && errors.message && (
+                <p className="error">{errors.message}</p>)}
                 </div>
                 <button type='submit'>Submit</button>
             </Form>
+            </div>
+           
         </section>
     )
 }
