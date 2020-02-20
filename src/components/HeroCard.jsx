@@ -14,7 +14,7 @@ const HeroCard = () => {
                 <FaRobot />
             </div>
             <div className='HeroCardText'>
-                <p>Hello Im a FullStack Developer</p>
+                <p>Hi, I am a fullStack Javascript Devleoper with a passion for Learning new tech Currently based in Houston, Tx</p>
                 <button>More Info</button>
             </div>
             

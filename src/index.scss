@@ -255,22 +255,52 @@ nav{
 
 
 .about{
+  margin: 0 auto;
   color: white;
   height: 75vh;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  .imgSection{
+  .aboutSection{
     color: white;
     display: flex;
-    max-width: 40%;
+    width: 40%;
     flex-direction: column;
     
   }
 
   .skillsSection{
-    min-width: 40%
+    max-width: 40%;
+
+    h2{
+      margin: 20px 0;
+    }
+    div{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+        .imgContainer{
+          // border: 2px solid green;
+          width: 33%;
+          object-fit: cover;
+          img{
+            width: 40%;
+            min-height: 50px;
+            background: white;
+            margin: 10px 0px;
+            padding: 5px;
+            border-radius: 5px;
+            
+          }
+          &:hover{
+            transform: scale(2);
+           
+          }
+        }
+      }
   }
 }
 

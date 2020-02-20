@@ -5,40 +5,65 @@ import { FaRobot } from 'react-icons/fa'
 import  html5 from '../imgs/HTML5.svg'
 import redux  from '../imgs/Redux.png'
 import css3 from '../imgs/CSS3_logo_and_wordmark.svg'
-import bootstrap from '../imgs/bootstrap-svg-vector-3.png'
-import node from '../imgs/nodeIcon.jpg'
-import postgresql from '../imgs/Postgresql_elephant.svg'
+import bootstrap from '../imgs/bootstrap.png'
+import node from '../imgs/node.png'
+import postgresql from '../imgs/pgSql.png'
 import reactLogo from '../../src/logo.svg'
 import graphql from '../imgs/GraphQL_Logo.png'
-import prisma from '../imgs/prisma.png'
+import prisma from '../imgs/prisma-2.svg'
 import docker from '../imgs/docker.svg'
 
 const About = () => {
 
     return (
         <section className='about'>
-            <section className='imgSection'>
+            <section className='aboutSection'>
                 <div>
                     <FaRobot />
                 </div>
-                <p>FullStack JavaScript Devolper with a passion for learning new Tech</p>
+                <p>Hi, I am a fullStack Javascript Devleoper with a passion for Learning new tech Currently based in Houston, Tx  </p>
             </section>
             <section className='skillsSection'>
                 <h2>Skills</h2>
                 <div>
-                    <div>
-                        {/* <Redux /> */}
-                        <img src={html5} />
-                        {/* <img src={redux} alt=""/> */}
-                        <img src={css3} alt=""/>
-                        <img src={bootstrap} alt=""/>
-                        <img src={node} alt=""/>
-                        <img src={postgresql} alt=""/>
-                        <img src={reactLogo} alt=""/>
-                        <img src={graphql} alt=""/>
-                        <img src={prisma} alt=""/>
-                        <img src={docker} alt=""/>
-                    </div>
+                    
+                        <div className='imgContainer'>
+                            <img src={html5} />
+                        </div>
+                        <div className='imgContainer'>
+                            <img src={css3} alt="css3"/>
+                        </div>
+                        <div className='imgContainer'>
+                            <img src={bootstrap} alt="boostrap"/>
+                        </div>
+                        <div className='imgContainer'>
+                            <img src={reactLogo} alt=""/>
+                        </div>
+                        <div className='imgContainer'>
+                            <img src={redux} alt=""/>
+                        </div>
+                        <div className='imgContainer'>
+                            <img src={node} alt=""/>
+                        </div>
+                        <div className='imgContainer'>
+                            <img src={postgresql} alt=""/>
+                        </div>
+                        <div className='imgContainer'>
+                            <img src={graphql} alt=""/>
+                        </div>
+                        <div className='imgContainer'>
+                            <img src={prisma} alt=""/>
+                        </div>
+                        <div className='imgContainer'>
+                            <img src={docker} alt=""/>
+                        </div>
+                       
+                        
+                        
+                        
+                        
+                        
+                    
                 </div>
             </section>
         </section>
