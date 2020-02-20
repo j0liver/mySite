@@ -229,21 +229,14 @@ nav{
       width: 35%;
       padding: 15px 0;
       
-      .FooterCircles{
-        font-size: 1.5rem;
-        border-radius: 90%;
-        
-        width: 8%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 3px 1px;
-        
+      
+
         a{
+          font-size: 1.5rem;
           color: white;
-          // opacity: .9;
         }
-      }
+        
+      
     }
     section{
       color: white;

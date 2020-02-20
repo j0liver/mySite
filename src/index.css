@@ -182,16 +182,9 @@ footer {
     justify-content: space-evenly;
     width: 35%;
     padding: 15px 0; }
-    footer .SocialLinks .FooterCircles {
+    footer .SocialLinks a {
       font-size: 1.5rem;
-      border-radius: 90%;
-      width: 8%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 3px 1px; }
-      footer .SocialLinks .FooterCircles a {
-        color: white; }
+      color: white; }
   footer section {
     color: white; }
 
