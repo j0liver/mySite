@@ -18,10 +18,14 @@ const About = () => {
     return (
         <section className='about'>
             <section className='aboutSection'>
-                <div>
+                <div className='imgContainer'>
                     <FaRobot />
                 </div>
                 <p>Hi, I am a fullStack Javascript Devleoper with a passion for Learning new tech Currently based in Houston, Tx  </p>
+               <div>
+               <button>Download Resume</button>
+                <button>Messsage Me</button>
+               </div>
             </section>
             <section className='skillsSection'>
                 <h2>Skills</h2>

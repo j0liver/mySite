@@ -46,6 +46,7 @@ const Contact = ({ values, touched, errors, status }) => {
                         placeholder='message'
                         value={values.message}
                         // onChange={handleChange}
+                        className='message'
                     />
                     {touched.message && errors.message && (
                 <p className="error">{errors.message}</p>)}

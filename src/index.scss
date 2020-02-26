@@ -260,11 +260,38 @@ nav{
     display: flex;
     width: 40%;
     flex-direction: column;
-    
+    border: 2px solid green;
+    .imgContainer{
+      min-height: 35vh;
+      width: 80%;
+      margin: 10px auto;
+      background: white;
+
+      @media (max-width: 760px)  { 
+      display: none
+}
+    }
+
+    div{
+      margin: 10px auto;
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+
+      button{
+        width: 40%;
+        border-radius: 5px;
+      }
+
+      
+    }
+    @media (max-width: 760px)  { 
+    width: 30%
+      }
   }
 
   .skillsSection{
-    max-width: 40%;
+    width: 40%;
 
     h2{
       margin: 20px 0;
@@ -276,7 +303,7 @@ nav{
       align-items: center;
       width: 100%;
         .imgContainer{
-          // border: 2px solid green;
+         
           width: 33%;
           object-fit: cover;
           img{
@@ -294,6 +321,10 @@ nav{
           }
         }
       }
+
+      @media (max-width: 760px)  { 
+    width: 55%
+}
   }
 }
 
@@ -324,17 +355,45 @@ nav{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  
+  
 
   div{
     opacity: 1;
     background-color: black;
     border: 1px solid white;
     width: 30%;
+    border-radius: 5px;
 
     form{
       display: flex;
       flex-direction: column; 
       flex-wrap: wrap;
+      
+      div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        border-radius: 0px;
+        input{
+          
+          width: 80%;
+        }
+        .error{
+          margin: 5px 0px;
+          width: 100%;
+          font-size: 1rem;
+        }
+
+        .message{
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+          min-height: 5vh;
+          
+         
+        }
+      }
       
       label{
         font-size: 16px;
@@ -349,7 +408,14 @@ nav{
 
       button{
         margin: 10px auto;
-        width: 50%
+        width: 50%;
+        padding: 5px;
+        border-radius: 5px;
+
+        &:hover{
+          background-color: black;
+          color: white;
+        }
       }
     }
   }

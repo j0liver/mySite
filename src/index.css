@@ -199,9 +199,29 @@ footer {
     color: white;
     display: flex;
     width: 40%;
-    flex-direction: column; }
+    flex-direction: column;
+    border: 2px solid green; }
+    .about .aboutSection .imgContainer {
+      min-height: 35vh;
+      width: 80%;
+      margin: 10px auto;
+      background: white; }
+      @media (max-width: 760px) {
+        .about .aboutSection .imgContainer {
+          display: none; } }
+    .about .aboutSection div {
+      margin: 10px auto;
+      display: flex;
+      justify-content: space-between;
+      width: 50%; }
+      .about .aboutSection div button {
+        width: 40%;
+        border-radius: 5px; }
+    @media (max-width: 760px) {
+      .about .aboutSection {
+        width: 30%; } }
   .about .skillsSection {
-    max-width: 40%; }
+    width: 40%; }
     .about .skillsSection h2 {
       margin: 20px 0; }
     .about .skillsSection div {
@@ -222,6 +242,9 @@ footer {
           border-radius: 5px; }
         .about .skillsSection div .imgContainer:hover {
           transform: scale(2); }
+    @media (max-width: 760px) {
+      .about .skillsSection {
+        width: 55%; } }
 
 .projects {
   width: 90%;
@@ -246,11 +269,28 @@ footer {
     opacity: 1;
     background-color: black;
     border: 1px solid white;
-    width: 30%; }
+    width: 30%;
+    border-radius: 5px; }
     .contact div form {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap; }
+      .contact div form div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        border-radius: 0px; }
+        .contact div form div input {
+          width: 80%; }
+        .contact div form div .error {
+          margin: 5px 0px;
+          width: 100%;
+          font-size: 1rem; }
+        .contact div form div .message {
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-end;
+          min-height: 5vh; }
       .contact div form label {
         font-size: 16px; }
       .contact div form div {
@@ -261,6 +301,11 @@ footer {
         opacity: 1; }
       .contact div form button {
         margin: 10px auto;
-        width: 50%; }
+        width: 50%;
+        padding: 5px;
+        border-radius: 5px; }
+        .contact div form button:hover {
+          background-color: black;
+          color: white; }
 
 /*# sourceMappingURL=index.css.map */
