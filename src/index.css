@@ -145,12 +145,15 @@ nav {
 .app {
   z-index: 1; }
 
+.particlesBackground {
+  border: 2px solid blue;
+  background-attachment: fixed; }
+
 .HeroCard {
   position: relative;
   z-index: 100;
   width: 60%;
   height: 75vh;
-  background-size: cover;
   font-size: 3.5rem;
   color: white;
   display: flex;
@@ -198,17 +201,20 @@ footer {
   .about .aboutSection {
     color: white;
     display: flex;
-    width: 40%;
+    width: 30%;
     flex-direction: column;
     border: 2px solid green; }
     .about .aboutSection .imgContainer {
-      min-height: 35vh;
+      min-height: 30vh;
       width: 80%;
       margin: 10px auto;
       background: white; }
       @media (max-width: 760px) {
         .about .aboutSection .imgContainer {
           display: none; } }
+    .about .aboutSection p {
+      width: 80%;
+      margin: 5px auto; }
     .about .aboutSection div {
       margin: 10px auto;
       display: flex;
@@ -217,6 +223,9 @@ footer {
       .about .aboutSection div button {
         width: 40%;
         border-radius: 5px; }
+        .about .aboutSection div button:hover {
+          background-color: black;
+          color: white; }
     @media (max-width: 760px) {
       .about .aboutSection {
         width: 30%; } }

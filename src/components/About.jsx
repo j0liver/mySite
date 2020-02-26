@@ -23,8 +23,8 @@ const About = () => {
                 </div>
                 <p>Hi, I am a fullStack Javascript Devleoper with a passion for Learning new tech Currently based in Houston, Tx  </p>
                <div>
-               <button>Download Resume</button>
-                <button>Messsage Me</button>
+               <button>Resume</button>
+                <button>Messsage</button>
                </div>
             </section>
             <section className='skillsSection'>

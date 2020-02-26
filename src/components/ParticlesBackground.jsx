@@ -6,7 +6,7 @@ import { FaBlackTie } from 'react-icons/fa';
 const ParticlesBackground = () => {
 
 	return(
-		<section>
+		<section className='particlesBackground'>
 			<Particles 
               params={{
             		particles: {
@@ -26,6 +26,7 @@ const ParticlesBackground = () => {
 				color: 'black',
 				zIndex: '-100',
 				position: "absolute",
+				
 				top: "0",
 				left: "0"
               }}

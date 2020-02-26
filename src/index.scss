@@ -175,6 +175,24 @@ nav{
 }
 
 
+
+
+
+
+//Particles Background//////////////////////////////
+
+.particlesBackground{
+
+  border: 2px solid blue;
+  background-attachment: fixed;
+} 
+
+
+
+
+
+
+
   ////HeroCard////////////////////////////////////////
 
   
@@ -184,7 +202,7 @@ nav{
     z-index: 100;
     width: 60%;
     height: 75vh;
-    background-size: cover;
+    // background-size: cover;
     font-size: 3.5rem;
     color: white;
     display: flex;
@@ -258,18 +276,23 @@ nav{
   .aboutSection{
     color: white;
     display: flex;
-    width: 40%;
+    width: 30%;
     flex-direction: column;
     border: 2px solid green;
     .imgContainer{
-      min-height: 35vh;
+      min-height: 30vh;
       width: 80%;
       margin: 10px auto;
       background: white;
 
       @media (max-width: 760px)  { 
       display: none
-}
+      }
+    }
+
+    p{
+      width: 80%;
+      margin: 5px auto;
     }
 
     div{
@@ -281,6 +304,11 @@ nav{
       button{
         width: 40%;
         border-radius: 5px;
+
+        &:hover{
+          background-color: black;
+          color: white;
+        }
       }
 
       
