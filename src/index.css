@@ -254,6 +254,35 @@ footer {
   justify-content: center;
   color: white;
   align-items: center; }
+  .projects div {
+    border: 2px solid white;
+    width: 30%;
+    margin: 0 auto; }
+    .projects div h1 {
+      font-size: 20px; }
+    .projects div .imgContainer {
+      width: 80%;
+      height: 20vh;
+      background-color: pink;
+      margin: 0 auto; }
+    .projects div p {
+      font-size: 15px;
+      width: 80%;
+      margin: 5px auto; }
+    .projects div .buttonContainer {
+      border: none;
+      width: 80%;
+      margin: 5px auto;
+      padding: 5px 0px;
+      display: flex;
+      justify-content: space-evenly; }
+      .projects div .buttonContainer button {
+        width: 20%;
+        background-color: white;
+        border-radius: 5px; }
+        .projects div .buttonContainer button:hover {
+          color: white;
+          background-color: black; }
 
 .contact {
   width: 90%;
@@ -281,7 +310,7 @@ footer {
         justify-content: flex-end;
         border-radius: 0px; }
         .contact div form div input {
-          width: 80%; }
+          width: 70%; }
         .contact div form div .error {
           margin: 5px 0px;
           width: 100%;

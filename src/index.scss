@@ -340,6 +340,50 @@ nav{
   justify-content: center;
   color: white;
   align-items: center;
+
+  div{
+   border: 2px solid white;
+    width: 30%;
+    margin: 0 auto;
+
+    h1{
+
+      font-size: 20px;
+    }
+
+    .imgContainer{
+      width: 80%;
+      height: 20vh;
+      background-color: pink;
+      margin: 0 auto;
+    }
+    p{
+      font-size: 15px;
+      
+      width: 80%;
+      margin: 5px auto
+    }
+
+    .buttonContainer{
+      border: none;
+      width: 80%;
+      margin: 5px auto;
+      padding: 5px 0px;
+      display: flex;
+      justify-content: space-evenly;
+
+      button{
+        width: 20%;
+        background-color: white;
+        border-radius: 5px;
+
+        &:hover{
+          color: white;
+          background-color: black;
+        }
+      }
+    }
+  }
 }
 
   
@@ -377,7 +421,7 @@ nav{
         border-radius: 0px;
         input{
           
-          width: 80%;
+          width: 70%;
         }
         .error{
           margin: 5px 0px;
