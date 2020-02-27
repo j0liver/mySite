@@ -33,22 +33,10 @@ const NavBar = () => {
   
     return (
         <header>
-            {/* <section>
-                <div>
-                    <img />
-                </div>
-            </section>
-            <section>
-                <ul>
-                    <Link></Link>
-                    <Link></Link>
-                    <Link></Link>
-                </ul>
-            </section> */}
 
             <nav className="navbar">
             <div className="logo">
-                <h4>The nav</h4>
+                <h4>Joseph Oliver</h4>
             </div>
             <ul className="nav-links navbar-nav">
                 <li><Link to='/'>Home</Link></li>

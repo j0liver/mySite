@@ -141,12 +141,7 @@ nav {
 .toggle .line3 {
   transform: rotate(45deg) translate(0px, -5px); }
 
-.app {
-  z-index: 1; }
-
 .HeroCard {
-  position: relative;
-  z-index: -10;
   width: 60%;
   height: 75vh;
   font-size: 3.5rem;
@@ -289,13 +284,13 @@ footer {
           background-color: black; }
     @media (max-width: 760px) {
       .projects div {
-        border: 3px solid red;
         width: 100%;
         fit-content: 20px; } }
   @media (max-width: 760px) {
     .projects {
-      border: 3px solid blue;
-      flex-direction: column; } }
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly; } }
 
 .contact {
   width: 90%;

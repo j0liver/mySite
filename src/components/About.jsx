@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaRobot } from 'react-icons/fa'
+import { useHistory } from 'react-router-dom'
 
 // icons
 import  html5 from '../imgs/HTML5.svg'
@@ -15,6 +16,8 @@ import docker from '../imgs/docker.svg'
 
 const About = () => {
 
+    const history = useHistory()
+
     return (
         <section className='about'>
             <section className='aboutSection'>
@@ -23,8 +26,8 @@ const About = () => {
                 </div>
                 <p>Hi, I am a fullStack Javascript Devleoper with a passion for Learning new tech Currently based in Houston, Tx  </p>
                <div>
-               <button>Resume</button>
-                <button>Messsage</button>
+               <button onClick={()=>{}}>Resume</button>
+                <button onClick={()=>{history.push('/contact')}}>Messsage</button>
                </div>
             </section>
             <section className='skillsSection'>
