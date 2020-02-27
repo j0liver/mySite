@@ -58,8 +58,7 @@ nav {
   min-height: 10vh;
   font-family: 'Poppins', sans-serif;
   z-index: 200;
-  opacity: .7;
-  position: relative; }
+  opacity: .7; }
 
 .logo {
   color: #fff;
@@ -145,13 +144,9 @@ nav {
 .app {
   z-index: 1; }
 
-.particlesBackground {
-  border: 2px solid blue;
-  background-attachment: fixed; }
-
 .HeroCard {
   position: relative;
-  z-index: 100;
+  z-index: -10;
   width: 60%;
   height: 75vh;
   font-size: 3.5rem;
@@ -292,6 +287,15 @@ footer {
         .projects div .buttonContainer button:hover {
           color: white;
           background-color: black; }
+    @media (max-width: 760px) {
+      .projects div {
+        border: 3px solid red;
+        width: 100%;
+        fit-content: 20px; } }
+  @media (max-width: 760px) {
+    .projects {
+      border: 3px solid blue;
+      flex-direction: column; } }
 
 .contact {
   width: 90%;
