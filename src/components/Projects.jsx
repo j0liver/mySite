@@ -7,30 +7,31 @@ const Project = () => {
             
 
             <div>
-                <h1>Project wahterver</h1>
+                <h1>QualityHub</h1>
                 <div className='imgContainer'>
                     <img />
                 </div>
                 <p>
-                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusantium ratione! Reprehenderit, ipsum in. Doloremque, illum nisi corporis possimus blanditiis, soluta enim quaerat, laboriosam consectetur adipisci placeat perferendis! Possimus, sequi. 
+                QualityHub is a web-primary app for both job seekers to polish their skills and for coaches to sell their expertise.
+
                 </p> 
                 <div className='buttonContainer'>
-                    <button>View Live</button>
-                    <button>View Code</button>    
+                    <button onClick={() => {window.location.href = 'https://bit.ly/2VgsU3o'}}>View Live</button>
+                    <button onClick={() => {window.location.href = 'https://git.io/JvGZN'}}>View Code</button>    
                 </div>
             </div>
 
             <div>
-                <h1>Project wahterver</h1>
+                <h1>Park Passport</h1>
                 <div className='imgContainer'>
                     <img />
                 </div>
                 <p>
-                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, accusantium ratione! Reprehenderit, ipsum in. Doloremque, illum nisi corporis possimus blanditiis, soluta enim quaerat, laboriosam consectetur adipisci placeat perferendis! Possimus, sequi. 
+                    Built for a 4 day challenge and designed for park lovers and travellers, Park Passport allows users to search for parks and create new posts about Parks not listed.
                 </p> 
                 <div className='buttonContainer'>
-                    <button>View Live</button>
-                    <button>View Code</button>    
+                    <button onClick={() => {window.location.href = 'http://bit.ly/37Znj3O'}}>View Live</button>
+                    <button onClick={() => {window.location.href = 'https://git.io/Jvgez'}}>View Code</button>    
                 </div>
             </div>
 
