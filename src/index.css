@@ -192,8 +192,7 @@ footer {
     color: white;
     display: flex;
     width: 30%;
-    flex-direction: column;
-    border: 2px solid green; }
+    flex-direction: column; }
     .about .aboutSection .imgContainer {
       min-height: 30vh;
       width: 80%;
@@ -254,7 +253,6 @@ footer {
   color: white;
   align-items: center; }
   .projects div {
-    border: 2px solid white;
     width: 30%;
     margin: 0 auto; }
     .projects div h1 {
@@ -262,7 +260,7 @@ footer {
     .projects div .imgContainer {
       width: 80%;
       height: 20vh;
-      background-color: pink;
+      background-color: white;
       margin: 0 auto; }
     .projects div p {
       font-size: 15px;
@@ -284,8 +282,9 @@ footer {
           background-color: black; }
     @media (max-width: 760px) {
       .projects div {
-        width: 100%;
-        fit-content: 20px; } }
+        width: 100%; }
+        .projects div .imgContainer {
+          display: none; } }
   @media (max-width: 760px) {
     .projects {
       flex-direction: column;
