@@ -11,11 +11,18 @@ const Contact = ({ values, touched, errors, status }) => {
     const handleChange = e => {
         setContact({ ...contact, [e.target.name]: e.target.value });
     }
+
+    // const handleSubmit = (e) => {
+    //     e.preventDefault()
+        
+    // }
+
     return(
         <section className='contact'>
             <div>
             <h2>Contact Me</h2>
-            <Form onSubmit="">
+            <Form onSubmit="" name='contact'>
+            <input type="hidden" name="contact" value="values" />
                 <div>
                     <label>Name</label>
                     <Field 
