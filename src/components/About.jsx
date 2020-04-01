@@ -24,7 +24,7 @@ const About = () => {
                 <div className='imgContainer'>
                     <FaRobot />
                 </div>
-                <p>Hi, I am a fullStack Javascript Devleoper with a passion for Learning new tech Currently based in Houston, Tx  </p>
+                <p>FullStack Devleoper with a passion for Learning new tech Currently based in Houston, Tx</p>
                <div>
                <button onClick={()=>{}}>Resume</button>
                 <button onClick={()=>{history.push('/contact')}}>Messsage</button>

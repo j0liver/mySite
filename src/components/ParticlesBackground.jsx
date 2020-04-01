@@ -20,12 +20,12 @@ const ParticlesBackground = () => {
             		}
             	}}
               style={{
-				width: '100vw',
+				width: '100ww',
 				height: '100vh',
 				backgroundColor: 'black',
 				color: 'black',
 				zIndex: '-100',
-				position: "absolute",
+				position: "fixed",
 				
 				top: "0",
 				left: "0"

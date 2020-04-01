@@ -1,59 +1,69 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-const NavBar = () => {
-    const navSlide = () => {
-        const burger = document.querySelector('.burger');
-        const nav = document.querySelector('.nav-links');
-        const navLinks = document.querySelectorAll('.nav-links li');
-        
-        //Toggle Nav
-       
-          nav.classList.toggle('nav-active');
-          
-          //Animate Links
-          navLinks.forEach((link, index)=>{
-            
-            if(link.style.animation){
-              link.style.animation = ''
-            }else{
-                  link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-      
-            }
-          });
-          
-          //burger animation
-          burger.classList.toggle('toggle');
-          
-          
-        };
+import React, {useState} from "react";
+
+import { Link, withRouter } from "react-router-dom";
+
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem } from 'reactstrap';
 
 
-     
-  
-  
+const NavBar = (props) => {
+
+
+    const [isOpen, setIsOpen] = useState(false);
+    
+    const toggle = () => setIsOpen(!isOpen);
+
     return (
-        <header>
+       
+    <div>
+        <Navbar color="black" light expand="md">
+            <Link to="/">
+                {/* <NavbarBrand>
+                    <img className="yeet" src = {logo}/>
+                </NavbarBrand> */}
+            </Link>
+            
+            <NavbarToggler onClick={toggle} style={{color: 'white', backgroundColor: 'white'}}/>
+            <Collapse isOpen={isOpen} navbar>
+            <Nav className="ml-auto" navbar>
+                <NavItem>
+                <Link to='/'>
+                        <NavLink  style={{color: 'white'}}>Home</NavLink>
+                    </Link>
+                </NavItem>
+                <NavItem>
+                    <Link to='/about'>
+                        <NavLink style={{color: 'white'}}>About</NavLink>
+                    </Link>
+                </NavItem>
+                <NavItem>
+                    <Link to='/projects'>
+                        <NavLink style={{color: 'white'}}>Projects</NavLink>
+                    </Link>
+                </NavItem>
+                <NavItem>
+                    <Link to='/contact'>
+                        <NavLink style={{color: 'white'}}>Contact</NavLink>
+                    </Link>
+                </NavItem>
+            </Nav>
+            </Collapse>
+        </Navbar>
+    </div>
 
-            <nav className="navbar">
-            <div className="logo">
-                <h4>Joseph Oliver</h4>
-            </div>
-            <ul className="nav-links navbar-nav">
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/about'>About</Link></li>
-                <li><Link to='/projects'>Projects</Link></li>
-                <li><Link to='/contact'>Contact</Link></li>
-            </ul>
-            <div className="burger navbar-toggle" onClick={() => (
-                navSlide())}>
-                <div className="line1"></div>
-                <div className="line2"></div>
-                <div className="line3"></div>
-            </div>
-            </nav>
-        </header>
     )
 }
 
 
-export default NavBar
+export default NavBar;
+

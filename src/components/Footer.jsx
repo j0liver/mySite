@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
             </section>
             <section>
-                <h4>CopyRight Joseph-Oliver</h4>
+                <h4>&copy; Joseph-Oliver</h4>
             </section>
         </footer>
     )

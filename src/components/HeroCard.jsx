@@ -16,7 +16,7 @@ const HeroCard = () => {
                 <FaRobot />
             </div>
             <div className='HeroCardText'>
-                <p>Hi, I am a fullStack Javascript Devleoper with a passion for Learning new tech Currently based in Houston, Tx</p>
+                <p>Hi, I am a fullStack Javascript Devleoper</p>
                 <button onClick={()=>{history.push('/about')}}>More Info</button>
             </div>
             
