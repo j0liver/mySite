@@ -199,9 +199,11 @@ footer {
       font-size: 20px; }
     .projects div .imgContainer {
       width: 80%;
-      height: 20vh;
       background-color: white;
-      margin: 0 auto; }
+      margin: 0 auto;
+      object-fit: fill; }
+      .projects div .imgContainer img {
+        width: 100%; }
     .projects div p {
       font-size: 15px;
       width: 80%;
