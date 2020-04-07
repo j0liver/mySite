@@ -68,7 +68,8 @@ table {
       margin-top: 10px;
       background-color: white;
       font-size: 1rem;
-      padding: 5px; }
+      padding: 5px;
+      border-radius: 5px; }
       @media (max-width: 760px) {
         .HeroCard .HeroCardText button {
           width: 40%; } }
