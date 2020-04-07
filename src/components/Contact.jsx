@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import { withFormik, Form, Field } from "formik";
+import { useHistory } from 'react-router-dom'
+
+import axios from 'axios'
 import * as Yup from "yup";
-const Contact = ({ values, touched, errors, status }) => {
+const Contact = ({ values, touched, errors, isSubmitting }) => {
     const [contact, setContact] = useState({
         name: '',
         email: '',
@@ -12,16 +15,12 @@ const Contact = ({ values, touched, errors, status }) => {
         setContact({ ...contact, [e.target.name]: e.target.value });
     }
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault()
-        
-    // }
 
     return(
         <section className='contact'>
             <div>
             <h2>Contact Me</h2>
-            <Form onSubmit="" name='contact'>
+            <Form name='contact'>
             <input type="hidden" name="contact" value="values" />
                 <div>
                     <label>Name</label>
@@ -58,7 +57,7 @@ const Contact = ({ values, touched, errors, status }) => {
                     {touched.message && errors.message && (
                 <p className="error">{errors.message}</p>)}
                 </div>
-                <button type='submit'>Submit</button>
+                <button type='submit' disabled={isSubmitting}>Submit</button>
             </Form>
             </div>
            
@@ -81,8 +80,15 @@ const ContactForm = withFormik({
     }),
   
     handleSubmit(values, { props, resetForm, setSubmitting, setStatus }) {
-      console.log()
-  
+      console.log(values)
+        axios
+            .post('https://mysiteserver.herokuapp.com/api/messages', values)
+            .then(res => {
+                
+            })
+            .catch(err => {
+                console.log(err)
+            })
       setSubmitting(false);
     }
   })(Contact);
