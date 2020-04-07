@@ -2,6 +2,9 @@ import React from 'react'
 import { FaRobot } from 'react-icons/fa'
 import { useHistory } from 'react-router-dom'
 
+//proifle pic
+import pic from '../imgs/profile.png'
+
 // icons
 import  html5 from '../imgs/HTML5.svg'
 import redux  from '../imgs/Redux.png'
@@ -22,7 +25,7 @@ const About = () => {
         <section className='about'>
             <section className='aboutSection'>
                 <div className='imgContainer'>
-                    <FaRobot />
+                    <img src={pic} alt=""/>
                 </div>
                 <p>FullStack Devleoper with a passion for Learning new tech Currently based in Houston, Tx</p>
                <div>

@@ -117,6 +117,8 @@ footer {
       @media (max-width: 760px) {
         .about .aboutSection .imgContainer {
           display: none; } }
+      .about .aboutSection .imgContainer img {
+        width: 100%; }
     .about .aboutSection p {
       width: 80%;
       margin: 5px auto; }
