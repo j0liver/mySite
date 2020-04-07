@@ -132,6 +132,13 @@ footer {
           width: 50%;
           display: flex;
           flex-direction: column; } }
+      .about .aboutSection div a {
+        width: 45%; }
+        .about .aboutSection div a button {
+          width: 100%; }
+        @media (max-width: 760px) {
+          .about .aboutSection div a {
+            width: 100%; } }
       .about .aboutSection div button {
         width: 45%;
         border-radius: 5px; }

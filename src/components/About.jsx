@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaRobot } from 'react-icons/fa'
-import { useHistory } from 'react-router-dom'
+import { useHistory, Link } from 'react-router-dom'
 
 //proifle pic
 import pic from '../imgs/profile.png'
@@ -17,6 +17,9 @@ import graphql from '../imgs/GraphQL_Logo.png'
 import prisma from '../imgs/prisma-2.svg'
 import docker from '../imgs/docker.svg'
 
+//resume
+import resume from '../resume/JosephOliver2.docx'
+
 const About = () => {
 
     const history = useHistory()
@@ -28,8 +31,10 @@ const About = () => {
                     <img src={pic} alt=""/>
                 </div>
                 <p>FullStack Devleoper with a passion for Learning new tech Currently based in Houston, Tx</p>
-               <div>
-               <button onClick={()=>{}}>Resume</button>
+                <div>
+                <a href='https://docs.google.com/document/d/1wq7oPocit9DsYx2ACgdKyQ8-LW-hM3LYFf0LPPTbXnE/edit?usp=sharing'>
+                    <button>Resume</button>
+                </a>
                 <button onClick={()=>{history.push('/contact')}}>Messsage</button>
                </div>
             </section>
