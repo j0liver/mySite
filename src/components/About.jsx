@@ -38,7 +38,7 @@ const About = () => {
                             <img src={html5} />
                         </div>
                         <div className='imgContainer'>
-                            <img src={css3} alt="css3"/>
+                            <img src={css3} alt="css3" className='css'/>
                         </div>
                         <div className='imgContainer'>
                             <img src={bootstrap} alt="boostrap"/>

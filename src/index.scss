@@ -49,7 +49,7 @@ table {
 ///NAV///////////////////////
 
 .navbar-toggler-icon{
-  background-color: black;
+  color: black;
 }
 
 
@@ -150,7 +150,7 @@ table {
     display: flex;
     width: 30%;
     flex-direction: column;
-    // border: 2px solid green;
+    
     .imgContainer{
       min-height: 30vh;
       width: 80%;
@@ -171,7 +171,7 @@ table {
       margin: 10px auto;
       display: flex;
       justify-content: space-between;
-      width: 50%;
+      width: 60%;
 
       @media (max-width: 760px){
         width: 50%;
@@ -180,7 +180,7 @@ table {
       }
 
       button{
-        width: 40%;
+        width: 45%;
         border-radius: 5px;
 
         &:hover{
@@ -211,17 +211,17 @@ table {
       width: 60%;
     }
     h2{
-      margin: 20px 0;
+      font-size: 25px;
+      margin: 20px auto;
     }
     div{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
       align-items: center;
-      width: 100%;
-     
+      width: 90%;
+
         .imgContainer{
-         
           max-width: 33%;
           object-fit: fill;
 
@@ -239,11 +239,15 @@ table {
             
           }
           &:hover{
-            transform: scale(2);
+            transform: scale(1.5);
            
           }
           @media (max-width: 760px) {
             width: 100%;
+            &:hover{
+              transform: scale(2);
+             
+            }
           }
         }
       }
@@ -350,7 +354,7 @@ table {
   div{
     opacity: 1;
     background-color: black;
-    border: 1px solid white;
+    
     width: 30%;
     border-radius: 5px;
 
@@ -383,7 +387,10 @@ table {
           justify-content: flex-start;
           align-items: flex-end;
           min-height: 5vh;
-          
+
+          @media (max-width: 1075px){
+            width: 100%;
+          }
          
         }
       }

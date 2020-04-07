@@ -46,7 +46,7 @@ table {
   border-spacing: 0; }
 
 .navbar-toggler-icon {
-  background-color: black; }
+  color: black; }
 
 .HeroCard {
   width: 60%;
@@ -124,14 +124,14 @@ footer {
       margin: 10px auto;
       display: flex;
       justify-content: space-between;
-      width: 50%; }
+      width: 60%; }
       @media (max-width: 760px) {
         .about .aboutSection div {
           width: 50%;
           display: flex;
           flex-direction: column; } }
       .about .aboutSection div button {
-        width: 40%;
+        width: 45%;
         border-radius: 5px; }
         .about .aboutSection div button:hover {
           background-color: black;
@@ -151,13 +151,14 @@ footer {
       .about .skillsSection {
         width: 60%; } }
     .about .skillsSection h2 {
-      margin: 20px 0; }
+      font-size: 25px;
+      margin: 20px auto; }
     .about .skillsSection div {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
       align-items: center;
-      width: 100%; }
+      width: 90%; }
       .about .skillsSection div .imgContainer {
         max-width: 33%;
         object-fit: fill; }
@@ -173,10 +174,12 @@ footer {
           padding: 5px;
           border-radius: 5px; }
         .about .skillsSection div .imgContainer:hover {
-          transform: scale(2); }
+          transform: scale(1.5); }
         @media (max-width: 760px) {
           .about .skillsSection div .imgContainer {
-            width: 100%; } }
+            width: 100%; }
+            .about .skillsSection div .imgContainer:hover {
+              transform: scale(2); } }
     @media (max-width: 760px) {
       .about .skillsSection {
         width: 55%; } }
@@ -241,7 +244,6 @@ footer {
   .contact div {
     opacity: 1;
     background-color: black;
-    border: 1px solid white;
     width: 30%;
     border-radius: 5px; }
     @media (max-width: 760px) {
@@ -267,6 +269,9 @@ footer {
           justify-content: flex-start;
           align-items: flex-end;
           min-height: 5vh; }
+          @media (max-width: 1075px) {
+            .contact div form div .message {
+              width: 100%; } }
       .contact div form label {
         font-size: 16px; }
       .contact div form div {
