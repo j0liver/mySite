@@ -23,7 +23,9 @@ function App() {
       <Route exact path='/' component={HeroCard}/>
       <Route path='/about' component={About}/>
       <Route path='/projects' component={Project}/>
-      <Route path='/contact' component={ContactForm}/>
+      <Route path='/contact' render={props => (
+        <ContactForm  {...props}/>
+      )}/>
       <Route path='/sent' component={Success}/>
       <Route path='/failed' component={Failure}/>
       <ParticlesBackground/>

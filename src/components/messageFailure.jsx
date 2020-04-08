@@ -3,7 +3,7 @@ import React from 'react'
 const messageFailure = () =>{
 
     return(
-    <div>
+    <div className='error'>
         <h1>Error! Please try again!</h1>
     </div>
     )

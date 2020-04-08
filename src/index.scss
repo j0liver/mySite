@@ -443,3 +443,32 @@ table {
 .particlesBackground{
   background-attachment: fixed;
 }
+
+
+
+////Sent messsage/////////////////////
+
+.sent{
+  height: 75vh;
+  width:80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0 auto;
+}
+
+
+
+
+////Errror Message////////////////////\
+
+.error{
+  height: 75vh;
+  width:80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0 auto;
+}

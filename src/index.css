@@ -304,4 +304,22 @@ footer {
 .particlesBackground {
   background-attachment: fixed; }
 
+.sent {
+  height: 75vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0 auto; }
+
+.error {
+  height: 75vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 0 auto; }
+
 /*# sourceMappingURL=index.css.map */

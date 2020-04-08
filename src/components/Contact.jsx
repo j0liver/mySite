@@ -15,6 +15,8 @@ const Contact = ({ values, touched, errors, isSubmitting }) => {
         setContact({ ...contact, [e.target.name]: e.target.value });
     }
 
+    
+
 
     return(
         <section className='contact'>
@@ -65,6 +67,7 @@ const Contact = ({ values, touched, errors, isSubmitting }) => {
     )
 }
 const ContactForm = withFormik({
+    
     mapPropsToValues({ name, email, message }) {
       return {
         name: name || "",
@@ -80,14 +83,14 @@ const ContactForm = withFormik({
     }),
   
     handleSubmit(values, { props, resetForm, setSubmitting, setStatus }) {
-      console.log(values)
+        // const history = useHistory();
         axios
             .post('https://mysiteserver.herokuapp.com/api/messages', values)
             .then(res => {
-                
+                props.history.push('/sent')
             })
             .catch(err => {
-                console.log(err)
+                props.history.push('/failed')
             })
       setSubmitting(false);
     }
