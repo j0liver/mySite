@@ -237,8 +237,10 @@ table {
 
         .imgContainer{
           max-width: 33%;
-          object-fit: fill;
-
+          object-fit: fit;
+          max-height: 70px;
+          min-height: 70px;
+          margin: 10px 0px;
           @media (max-width: 760px){
             width: 45%;
             object-fit: fill;
@@ -246,6 +248,7 @@ table {
           img{
             width: 60%;
             min-height: 50px;
+            max-height: 70px;
             background: white;
             margin: 10px 0px;
             padding: 5px;
