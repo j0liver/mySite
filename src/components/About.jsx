@@ -72,13 +72,6 @@ const About = () => {
                         <div className='imgContainer'>
                             <img src={docker} alt=""/>
                         </div>
-                       
-                        
-                        
-                        
-                        
-                        
-                    
                 </div>
             </section>
         </section>
