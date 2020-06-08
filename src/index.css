@@ -204,12 +204,17 @@ footer {
   margin: 0 auto;
   justify-content: center;
   color: white;
-  align-items: center; }
+  align-items: center;
+  overflow: auto; }
+  .projects .example::-webkit-scrollbar {
+    display: none; }
   .projects div {
     width: 30%;
     margin: 0 auto; }
     .projects div h1 {
       font-size: 20px; }
+    .projects div h3 {
+      font-size: 16px; }
     .projects div .imgContainer {
       width: 80%;
       background-color: white;
@@ -221,6 +226,16 @@ footer {
       font-size: 15px;
       width: 80%;
       margin: 5px auto; }
+    .projects div .stack {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 80%;
+      margin-top: 10px; }
+      .projects div .stack li {
+        width: 100%;
+        font-size: 12px; }
     .projects div .buttonContainer {
       border: none;
       width: 90%;
@@ -242,6 +257,7 @@ footer {
           display: none; } }
   @media (max-width: 760px) {
     .projects {
+      padding-top: 150px;
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly; } }

@@ -7,17 +7,17 @@ const Footer = () => {
         <footer>
             <section className='SocialLinks'>
             <div className='FooterCircles'>
-                    <a href='https://www.linkedin.com/in/j0liver/'>
+                    <a href='https://www.linkedin.com/in/j0liver/' target="_blank">
                         <FaLinkedinIn />
                     </a>
                 </div>
                 <div className='FooterCircles'>
-                    <a href='https://github.com/j0liver'>
+                    <a href='https://github.com/j0liver' target="_blank">
                         <FaGithubAlt />
                     </a>
                 </div>
                 <div className='FooterCircles'>
-                    <a href='mailto:j0liverko@Gmail.com'>
+                    <a href='mailto:j0liverko@Gmail.com' target="_blank">
                         <MdEmail />
                     </a>
                 </div>
