@@ -2,6 +2,7 @@ import React from 'react'
 import { FaRobot } from 'react-icons/fa'
 import { useHistory, Link } from 'react-router-dom'
 
+
 //proifle pic
 import pic from '../imgs/profile.png'
 
@@ -21,9 +22,8 @@ import docker from '../imgs/docker.svg'
 import resume from '../resume/JosephOliver2.docx'
 
 const About = () => {
-
-    const history = useHistory()
-
+    const history = useHistory();
+    
     return (
         <section className='about'>
             <section className='aboutSection'>
@@ -38,41 +38,19 @@ const About = () => {
                 <button onClick={()=>{history.push('/contact')}}>Messsage</button>
                </div>
             </section>
+            
             <section className='skillsSection'>
-                <h2>Skills</h2>
-                <div>
-                    
-                        <div className='imgContainer'>
-                            <img src={html5} />
-                        </div>
-                        <div className='imgContainer'>
-                            <img src={css3} alt="css3" className='css'/>
-                        </div>
-                        <div className='imgContainer'>
-                            <img src={bootstrap} alt="boostrap"/>
-                        </div>
-                        <div className='imgContainer'>
-                            <img src={reactLogo} alt=""/>
-                        </div>
-                        <div className='imgContainer'>
-                            <img src={redux} alt=""/>
-                        </div>
-                        <div className='imgContainer'>
-                            <img src={node} alt=""/>
-                        </div>
-                        <div className='imgContainer'>
-                            <img src={postgresql} alt=""/>
-                        </div>
-                        <div className='imgContainer'>
-                            <img src={graphql} alt=""/>
-                        </div>
-                        <div className='imgContainer'>
-                            <img src={prisma} alt=""/>
-                        </div>
-                        <div className='imgContainer'>
-                            <img src={docker} alt=""/>
-                        </div>
-                </div>
+             
+                <h2>Skills:</h2>
+                <ul>
+                    <li>Html5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React/Redux</li>
+                    <li>Node/Express</li>
+                    <li>PostgreSql</li>
+                </ul>
+                
             </section>
         </section>
     )
