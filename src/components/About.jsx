@@ -30,7 +30,7 @@ const About = () => {
                 <div className='imgContainer'>
                     <img src={pic} alt=""/>
                 </div>
-                <p>FullStack Devleoper with a passion for learning new tech. Whenever im not coding or reading about tech i like to play basketball! Currently based in Houston, Tx</p>
+                <p>Full Stack Devleoper with a passion for learning new tech. Whenever im not coding or reading about tech i like to play basketball! Currently based in Houston, Tx</p>
                 <div>
                 <a href='https://docs.google.com/document/d/1wq7oPocit9DsYx2ACgdKyQ8-LW-hM3LYFf0LPPTbXnE/edit?usp=sharing' target="_blank">
                     <button>Resume</button>
