@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { withFormik, Form, Field } from "formik";
 import { useHistory } from 'react-router-dom'
+import { Spinner } from 'reactstrap';
 
 import axios from 'axios'
 import * as Yup from "yup";
@@ -15,6 +16,7 @@ const Contact = ({ values, touched, errors, isSubmitting }) => {
         setContact({ ...contact, [e.target.name]: e.target.value });
     }
 
+    const [waiting, setWaiting] = useState(false)
     
 
 
@@ -23,6 +25,10 @@ const Contact = ({ values, touched, errors, isSubmitting }) => {
             <div>
             <h2>Contact Me</h2>
             <Form name='contact'>
+                {
+                    waiting && <Spinner type="grow" color="light" style={{backgroundColor: 'gray'}} />
+
+                }
             <input type="hidden" name="contact" value="values" />
                 <div>
                     <label>Name</label>
@@ -59,7 +65,9 @@ const Contact = ({ values, touched, errors, isSubmitting }) => {
                     {touched.message && errors.message && (
                 <p className="error">{errors.message}</p>)}
                 </div>
-                <button type='submit' disabled={isSubmitting}>Submit</button>
+                <button  disabled={isSubmitting} onClick={()=> setWaiting(!waiting)}>
+                    Submit
+                </button>
             </Form>
             </div>
            
