@@ -6,17 +6,6 @@ import { useHistory, Link } from 'react-router-dom'
 //proifle pic
 import pic from '../imgs/profile.png'
 
-// icons
-// import  html5 from '../imgs/HTML5.svg'
-// import redux  from '../imgs/Redux.png'
-// import css3 from '../imgs/CSS3_logo_and_wordmark.svg'
-// import bootstrap from '../imgs/bootstrap.png'
-// import node from '../imgs/node.png'
-// import postgresql from '../imgs/pgSql.png'
-// import reactLogo from '../../src/logo.svg'
-// import graphql from '../imgs/GraphQL_Logo.png'
-// import prisma from '../imgs/prisma-2.svg'
-// import docker from '../imgs/docker.svg'
 
 //resume
 import resume from '../resume/JosephOliver2.docx'
